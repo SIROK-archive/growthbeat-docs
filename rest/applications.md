@@ -5,8 +5,8 @@
 |Key|Value|
 |---|---|
 |id|Application ID|
-|name|Name for the account|
-|created|Time the account created|
+|name|Name for the application|
+|created|Time the application created|
 
 ## Get application
 

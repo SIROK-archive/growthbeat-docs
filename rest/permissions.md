@@ -74,3 +74,71 @@
 ```
 
 ```
+
+## List permission
+
+### Request
+
+|Key|Value|
+|---|---|
+|Method|GET|
+|URL|https://api.growthbeat.com/1/permissions|
+
+### Parameters
+
+|Key|Value|Default|
+|---|---|---|
+|accountId|Account ID|
+|targetAccountId|Target account ID||
+|credentialId|Credential ID for authentication||
+
+### Required permission
+
+|Resource|Action|
+|---|---|
+|Resource:Growthbeat:Account:{accountId}|Action:Growthbeat:ListPermission|
+
+### Example
+
+```
+
+```
+
+```
+
+```
+
+## Create permission
+
+### Request
+
+|Key|Value|
+|---|---|
+|Method|POST|
+|URL|https://api.growthbeat.com/1/permissions|
+
+### Parameters
+
+|Key|Value|Default|
+|---|---|---|
+|accountId|Account ID||
+|targetAccountId|Target account ID||
+|resourceId|||
+|actionId|||
+|credentialId|Credential ID for authentication||
+
+### Required permission
+
+|Resource|Action|
+|---|---|
+|Resource:Growthbeat:Account:{accountId}|Action:Growthbeat:CreatePermission|
+
+### Example
+
+```
+
+```
+
+```
+
+```

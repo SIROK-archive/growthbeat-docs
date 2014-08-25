@@ -5,7 +5,7 @@
 |Key|Value|
 |---|---|
 |id|Client ID|
-|name|Name for the client|
+|application|Application for the client|
 |created|Time the client created|
 
 

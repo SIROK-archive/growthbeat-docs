@@ -286,9 +286,9 @@ curl -X DELETE -H 'Accept: application/json' 'https://api.growthbeat.com/1/permi
 ### Example
 
 ```
-
+curl -X POST -H 'Accept: application/json' 'https://api.growthbeat.com/1/authorize' -d 'resourceId=Resource' -d 'actionId=Action:Growthbeat' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+true
 ```

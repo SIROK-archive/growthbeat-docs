@@ -200,11 +200,33 @@ curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/permissi
 ### Example
 
 ```
-
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' 'https://api.growthbeat.com/1/permissions' -d 'accountId=L6rmAwrpJvMjowGu' -d 'targetAccountId=qRkucFch8owN2PWs' -d 'resourceId=Resource:Growthbeat:Account:L6rmAwrpJvMjowGu' -d 'actionId=Action:Growthbeat:GetAccount' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+{
+	"created":"2014-08-26T14:12:25+0000",
+	"account":{
+		"name":"Root Account",
+		"id":"L6rmAwrpJvMjowGu",
+		"created":"2014-05-27T06:15:19+0000"
+	},
+	"targetAccount":{
+		"name":"Growthbeat Master Account",
+		"id":"qRkucFch8owN2PWs",
+		"created":"2014-06-01T02:23:46+0000"
+	},
+	"resource":{
+		"name":"L6rmAwrpJvMjowGu",
+		"id":"Resource:Growthbeat:Account:L6rmAwrpJvMjowGu",
+		"created":"2014-05-29T04:39:40+0000"
+	},
+	"action":{
+		"name":"GetAccount",
+		"id":"Action:Growthbeat:GetAccount",
+		"created":"2014-05-29T04:39:40+0000"
+	}
+}
 ```
 
 ## Delete permission

@@ -33,11 +33,19 @@
 ### Example
 
 ```
-
+curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/credentials/nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY?credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+{
+	"id":"nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY",
+	"created":"2014-05-27T06:17:05+0000",
+	"account":{
+		"name":"Root Account",
+		"id":"L6rmAwrpJvMjowGu",
+		"created":"2014-05-27T06:15:19+0000"
+	}
+}
 ```
 
 ## List credential
@@ -65,11 +73,21 @@
 ### Example
 
 ```
-
+curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/credentials?accountId='L6rmAwrpJvMjowGu'&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+[
+	{
+		"id":"nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY",
+		"created":"2014-05-27T06:17:05+0000",
+		"account":{
+			"name":"Root Account",
+			"id":"L6rmAwrpJvMjowGu",
+			"created":"2014-05-27T06:15:19+0000"
+		}
+	}
+]
 ```
 
 ## Create credential

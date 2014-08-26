@@ -35,11 +35,33 @@
 ### Example
 
 ```
-
+curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/permissions?accountId=L6rmAwrpJvMjowGu&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+[
+	{
+		"created":"2014-05-27T13:36:25+0000",
+		"account":{
+			"name":"Root Account",
+			"id":"L6rmAwrpJvMjowGu",
+			"created":"2014-05-27T06:15:19+0000"
+		},
+		"targetAccount":{
+			"name":"Growthbeat Master Account",
+			"id":"qRkucFch8owN2PWs",
+			"created":"2014-06-01T02:23:46+0000"
+		},
+		"resource":{
+			"name":"Resource",
+			"id":"Resource",
+			"created":"2014-06-01T01:22:29+0000"
+		},
+		
+	　（中略）
+	　
+	}
+]
 ```
 
 

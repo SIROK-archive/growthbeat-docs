@@ -30,15 +30,18 @@
 |---|---|
 |Resource:Growthbeat:Application:{applicationId}|Action:Growthbeat:GetApplication|
 
-
 ### Example
 
 ```
-
+curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/applications/LBYtXQ26k6pHRZZB?credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+{
+	"name":"Default app",
+	"id":"LBYtXQ26k6pHRZZB",
+	"created":"2014-06-26T06:44:55+0000"
+}
 ```
 
 ## List application
@@ -66,11 +69,14 @@
 
 ### Example
 ```
-
+curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/applications/?accountId='L6rmAwrpJvMjowGu'&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+[
+    {"name":"Default app","id":"LBYtXQ26k6pHRZZB","created":"2014-06-26T06:44:55+0000"},
+    {"name":"Default app","id":"x8CkiXLSyZ61FOcG","created":"2014-06-26T06:44:56+0000"}
+]
 ```
 
 
@@ -100,11 +106,15 @@
 
 ### Example
 ```
-
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' 'https://api.growthbeat.com/1/applications' -d 'name=Account for production' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+{
+	"name":"Account for production",
+	"id":"57ztw5jLJKqm3zlV",
+	"created":"2014-08-26T02:23:08+0000"
+}
 ```
 
 ## Update application
@@ -132,9 +142,13 @@
 
 ### Example
 ```
-
+curl -X PUT 'https://api.growthbeat.com/1/applications/LBYtXQ26k6pHRZZB' -d 'name=Account for production' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+{
+	"name":"Account for production",
+	"id":"LBYtXQ26k6pHRZZB",
+	"created":"2014-06-26T06:44:55+0000"
+}
 ```

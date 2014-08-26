@@ -257,11 +257,7 @@ curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-f
 ### Example
 
 ```
-
-```
-
-```
-
+curl -X DELETE -H 'Accept: application/json' 'https://api.growthbeat.com/1/permissions?accountId=L6rmAwrpJvMjowGu&targetAccountId=knpjsN0ectt634v0&resourceId=Resource&actionId=Action:GrowthPush&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ## Authenticate

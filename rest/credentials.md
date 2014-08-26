@@ -115,11 +115,18 @@ curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/credenti
 ### Example
 
 ```
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' 'https://api.growthbeat.com/1/credentials' -d 'accountId=L6rmAwrpJvMjowGu' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'```
 
 ```
-
-```
-
+{
+	"id":"qrsshfX9sItzaSQJ7T0js9sUYQkkKexJ",
+	"created":"2014-08-26T12:32:13+0000",
+	"account":{
+		"name":"Root Account",
+		"id":"L6rmAwrpJvMjowGu",
+		"created":"2014-05-27T06:15:19+0000"
+	}
+}
 ```
 
 ## Get credential

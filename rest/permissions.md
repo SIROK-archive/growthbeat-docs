@@ -257,7 +257,13 @@ curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-f
 ### Example
 
 ```
-curl -X DELETE -H 'Accept: application/json' 'https://api.growthbeat.com/1/permissions?accountId=L6rmAwrpJvMjowGu&targetAccountId=knpjsN0ectt634v0&resourceId=Resource&actionId=Action:GrowthPush&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
+curl -i -X DELETE -H 'Accept: application/json' 'https://api.growthbeat.com/1/permissions?accountId=L6rmAwrpJvMjowGu&targetAccountId=knpjsN0ectt634v0&resourceId=Resource&actionId=Action:GrowthPush&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
+```
+
+```
+HTTP/1.1 204 No Content
+Server: Apache-Coyote/1.1
+Date: Tue, 26 Aug 2014 14:48:28 GMT
 ```
 
 ## Authenticate
@@ -286,9 +292,15 @@ curl -X DELETE -H 'Accept: application/json' 'https://api.growthbeat.com/1/permi
 ### Example
 
 ```
-curl -X POST -H 'Accept: application/json' 'https://api.growthbeat.com/1/authorize' -d 'resourceId=Resource' -d 'actionId=Action:Growthbeat' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
+curl -i -X POST -H 'Accept: application/json' 'https://api.growthbeat.com/1/authorize' -d 'resourceId=Resource' -d 'actionId=Action:Growthbeat' -d 'credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 26 Aug 2014 15:46:26 GMT
+
 true
 ```

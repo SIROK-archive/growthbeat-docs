@@ -37,11 +37,14 @@
 ### Example
 
 ```
-
+curl -i -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/users?accountId=L6rmAwrpJvMjowGu&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Length: 0
+Date: Tue, 26 Aug 2014 15:43:07 GMT
 ```
 
 ## Create user

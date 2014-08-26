@@ -154,9 +154,19 @@ curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-f
 ### Example
 
 ```
-
+curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/credentials?sessionId=30630PW1HIIy8pcdkPzuJzAxDzbxG4rv&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+[
+	{
+		"id":"3wr8sYcxZweD5ohp6vzfRiQKQilxhlhH",
+		"created":"2014-06-26T06:44:55+0000",
+		"account":{
+			"name":"Subaccount for Growthbeat",
+			"id":"xoCKaD10WHqoRLNw",
+			"created":"2014-06-26T06:44:55+0000"
+		}
+	}
+]
 ```

@@ -141,11 +141,35 @@ curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/permissi
 ### Example
 
 ```
-
+curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/permissions?accountId=DFhnn09qoQQiG1YX&targetAccountId=qRkucFch8owN2PWs&credentialId=nMdZa0PfT1rmxHEh4MTnpfG6ncxtiTgY'
 ```
 
 ```
-
+[
+	{
+		"created":"2014-05-27T13:36:25+0000",
+		"account":{
+			"name":"Default Permission Account",
+			"id":"DFhnn09qoQQiG1YX",
+			"created":"2014-06-01T02:23:46+0000"
+		},
+		"targetAccount":{
+			"name":"Growthbeat Master Account",
+			"id":"qRkucFch8owN2PWs",
+			"created":"2014-06-01T02:23:46+0000"
+		},
+		"resource":{
+			"name":"Resource",
+			"id":"Resource",
+			"created":"2014-06-01T01:22:29+0000"
+		},
+		"action":{
+			"name":"Action",
+			"id":"Action",
+			"created":"2014-06-01T01:15:44+0000"
+		}
+	}
+]
 ```
 
 ## Create permission

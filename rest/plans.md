@@ -51,35 +51,3 @@ curl -X GET -H 'Accept: application/json' 'https://api.growthbeat.com/1/plans?ac
 	"capacity":10000000000000
 }
 ```
-
-## Get plan
-
-### Request
-
-|Key|Value|
-|---|---|
-|Method|GET|
-|URL|https://api.growthbeat.com/1/plans/default|
-
-### Parameters
-
-|Key|Value|Default|
-|---|---|---|
-|credentialId|Credential ID for authentication||
-
-### Required permission
-
-|Resource|Action|
-|---|---|
-|||
-
-### Example
-
-```
-
-```
-
-```
-
-```
-
